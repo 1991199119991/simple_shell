@@ -1,6 +1,5 @@
 #include "shell.h"
 
-
 	char **commands = NULL;
 	char *line = NULL;
 	char *shell_name = NULL;
@@ -16,7 +15,6 @@
  * Prints error on Failure
  * Return: 0 on success
  */
-
 
 int main(int argc __attribute__((unused)), char **argv)
 {
@@ -59,5 +57,4 @@ int main(int argc __attribute__((unused)), char **argv)
 
 	return (status);
 }
-
 	

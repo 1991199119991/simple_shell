@@ -1,23 +1,22 @@
 #include "shell.h"
 
 /**
- * Auth: Emma Udeji
- * 		 Pericles Adjovi
+ * Auth: Adam
  *
  * Description:
  * the extended functions for main.c
  */
 
-
-/** parse_command - determines the type of the command
+/** 
+ * parse_command - determines the type of the command
  * @command: command to be parsed
  *
  * Return: constant representing the type of the command
  * Description -
- * 		 EXTERNAL_COMMAND (1) represents commands like /bin/ls
- *		 INTERNAL_COMMAND (2) represents commands like exit, env
- *		 PATH_COMMAND (3) represents commands found in the PATH like ls
- *		 INVALID_COMMAND (-1) represents invalid commands
+ * EXTERNAL_COMMAND (1) represents commands like /bin/ls
+ * INTERNAL_COMMAND (2) represents commands like exit, env
+ * PATH_COMMAND (3) represents commands found in the PATH like ls
+ * INVALID_COMMAND (-1) represents invalid commands
  */
 
 int parse_command(char *command)
@@ -54,6 +53,7 @@ int parse_command(char *command)
  *
  * Return: void
  */
+ 
 void execute_command(char **tokenized_command, int command_type)
 {
 	void (*func)(char **command);
@@ -95,6 +95,7 @@ void execute_command(char **tokenized_command, int command_type)
  *
  * Return: path where the command is found in, NULL if not found
  */
+ 
 char *check_path(char *command)
 {
 	char **path_array = NULL;
@@ -132,6 +133,7 @@ char *check_path(char *command)
  *
  * Return: pointer to the proper function, or null on fail
  */
+ 
 void (*get_func(char *command))(char **)
 {
 	int i;
@@ -153,6 +155,7 @@ void (*get_func(char *command))(char **)
  *
  * Return: the value of the variable as a string
  */
+ 
 char *_getenv(char *name)
 {
 	char **my_environ;
@@ -172,4 +175,3 @@ char *_getenv(char *name)
 	}
 	return (NULL);
 }
-

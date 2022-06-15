@@ -2,10 +2,10 @@
 
 /**
  * tokenizer - tokenizes input and stores it into an array
- *@input_string: input to be parsed
- *@delim: delimiter to be used, needs to be one character string
+ * @input_string: input to be parsed
+ * @delim: delimiter to be used, needs to be one character string
  *
- *Return: array of tokens
+ * Return: array of tokens
  */
 
 char **tokenizer(char *input_string, char *delim)
@@ -32,11 +32,11 @@ char **tokenizer(char *input_string, char *delim)
 }
 
 /**
- *print - prints a string to stdout
- *@string: string to be printed
- *@stream: stream to print out to
+ * print - prints a string to stdout
+ * @string: string to be printed
+ * @stream: stream to print out to
  *
- *Return: void, return nothing
+ * Return: void, return nothing
  */
 void print(char *string, int stream)
 {
@@ -47,11 +47,10 @@ void print(char *string, int stream)
 }
 
 /**
- *remove_newline - removes new line from a string
- *@str: string to be used
+ * remove_newline - removes new line from a string
+ * @str: string to be used
  *
- *
- *Return: void
+ * Return: void
  */
 
 void remove_newline(char *str)
@@ -68,9 +67,9 @@ void remove_newline(char *str)
 }
 
 /**
- *_strcpy - copies a string to another buffer
- *@source: source to copy from
- *@dest: destination to copy to
+ * _strcpy - copies a string to another buffer
+ * @source: source to copy from
+ * @dest: destination to copy to
  *
  * Return: void
  */
@@ -85,8 +84,8 @@ void _strcpy(char *source, char *dest)
 }
 
 /**
- *_strlen - counts string length
- *@string: string to be counted
+ * _strlen - counts string length
+ * @string: string to be counted
  *
  * Return: length of the string
  */

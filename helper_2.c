@@ -1,14 +1,14 @@
 #include "shell.h"
 
-
 /**
- *_strtok_r - tokenizes a string
- *@string: string to be tokenized
- *@delim: delimiter to be used to tokenize the string
- *@save_ptr: pointer to be used to keep track of the next token
+ * _strtok_r - tokenizes a string
+ * @string: string to be tokenized
+ * @delim: delimiter to be used to tokenize the string
+ * @save_ptr: pointer to be used to keep track of the next token
  *
- *Return: The next available token
+ * Return: The next available token
  */
+ 
 char *_strtok_r(char *string, char *delim, char **save_ptr)
 {
 	char *finish;
@@ -47,6 +47,7 @@ char *_strtok_r(char *string, char *delim, char **save_ptr)
  *
  * Return: the converted int
  */
+ 
 int _atoi(char *s)
 {
 	unsigned int n = 0;
@@ -72,6 +73,7 @@ int _atoi(char *s)
  *
  * Return: pointer to the address of the new memory block
  */
+ 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *temp_block;
@@ -123,6 +125,7 @@ void ctrl_c_handler(int signum)
  *
  * Return: void
  */
+ 
 void remove_comment(char *input)
 {
 	int i = 0;
@@ -137,5 +140,3 @@ void remove_comment(char *input)
 	}
 	input[i] = '\0';
 }
-
-
